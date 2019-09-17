@@ -1,0 +1,35 @@
+body {
+  margin-left: 24px;
+}
+
+
+
+
+
+/* Header */
+header {
+  margin-right: 24px;
+}
+
+.logo {
+  height: 32px;
+  margin: 24px 16px;
+}
+
+.logo img {
+
+}
+
+.logo-1, .logo-2 {
+  font-family: 'Gayathri', sans-serif;
+  font-size: 28px;
+
+}
+
+.logo-1 {
+  font-weight: 700;
+}
+
+.logo-2 {
+  font-weight: 100;
+}
