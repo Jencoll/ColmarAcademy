@@ -1,31 +1,41 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="fr-CA" dir="ltr">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Colmar Academy</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gayathri:100,400,700|Lato:300,400,700,900&display=swap" rel="stylesheet">
   </head>
+
   <body>
     <!-- Header -->
     <header>
-      <img src="resources/images/ic-logo.svg" alt="logo Colmar Academy">
-      <span><a id="logo-title" href="#">COLMAR ACADEMY</a></span>
-      <ul>
-        <li>On campus</li>
-        <li>Online</li>
-        <li>For companies</li>
-        <li>Sign in</li>
-      </ul>
+      <div class="logo">
+        <img src="resources/images/ic-logo.svg" alt="logo Colmar Academy">
+        <span class="logo-1">COLMAR</span>
+        <span class="logo-2">ACADEMY</span>
+      </div>
+      <nav class="desktop">
+        <span>On campus</span>
+        <span>Online</span>
+        <span>For companies</span>
+        <span>Sign in</span>
+      </nav>
+      <nav class="mobile">
+        <img src="resources/images/ic-logo.svg" alt="logo Colmar Academy">
+        <img src="resources/images/ic-on-campus.svg" alt="desk icon">
+        <img src="resources/images/ic-online.svg" alt="desktop">
+        <img src="resources/images/ic-login.svg" alt="person icon">
+      </nav>
     </header>
 
-    <!-- Featured section -->
-    <div class="feature-container">
-      <div class="feature-panels">
-        <div class="left-panel">
+    <!-- Banner section -->
+    <div class="banner-container">
+      <div class="banner">
+        <div class="left-side">
             <img src="resources/images/banner.jpg" alt="Colmar Academy">
         </div>
-        <div class="right-panel">
+        <div class="right-side">
           <h1>Learn something new everyday</h1>
           <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
           <button type="button" name="button">Start here</button>
@@ -67,7 +77,7 @@
     </div>
 
       <!-- Section 3: Start learning -->
-    <div class="container-3">
+    <div class="container-desktop">
       <h2>Start learning</h2>
       <div class="card">
         <h4>Software engineering</h4>
@@ -100,12 +110,34 @@
         <p>Analytics, Content Marketing, Mobile Marketing</p>
       </div>
     </div>
+    <div class="container-mobile">
+      <h2>Start Learning</h2>
+      <div class="card-mobile">
+        <h4>Software engineering</h4>
+      </div>
+      <div class="card-mobile">
+        <h4>Computer art</h4>
+      </div>
+      <div class="card-mobile">
+        <h4>Design</h4>
+      </div>
+      <div class="card-mobile">
+        <h4>Data</h4>
+      </div>
+      <div class="card-mobile">
+        <h4>Business</h4>
+      </div>
+      <div class="card-mobile">
+        <h4>Marketing</h4>
+      </div>
+    </div>
 
 <!-- Section 4: Thesis exhibit -->
     <div class="container">
+      <h2>Thesis exhibit</h2>
       <div class="articles-panels">
         <div class="left-article">
-          <video src="resources/videos/thesis.mp4" autoplay controls>
+          <video src="resources/videos/thesis.mp4" type="video/mp4" autoplay controls>
             Video not supported
           </video>
           <h4>Reimagine urban</h4>
@@ -125,7 +157,12 @@
         </div>
       </div>
     </div>
+    <div class="thesis-mobile">
+      <h2>Thesis exhibit</h2>
+      <video src="resources/videos/thesis.mp4" type="video/mp4" autoplay controls>Video not supported</video>
+    </div>
 
+<!-- footer -->
     <footer>
       <p>&copy; 2016 Colmar Academy. All rights reserved</p>
       <nav class="menu-2">
