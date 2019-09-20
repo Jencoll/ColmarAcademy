@@ -40,6 +40,12 @@ h4 {
   line-height: 1.5;
 }
 
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(10, 10, 10, 0.75);
+}
+
 p {
   font-size: 1rem;
   color: rgba(10, 10, 10, 0.95);
@@ -219,7 +225,6 @@ button {
 .news {
   display: flex;
   align-items: flex-start;
-  height: 700px;
   padding-left: 1.5rem;
 }
 
@@ -335,5 +340,79 @@ button {
     height: auto;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+
+/*Learning section */
+.programs {
+  background-color: rgba(225, 219, 216, 0.4);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.programs h2 {
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.grid-container {
+  display: inline-grid;
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.program-card {
+  background-color: white;
+}
+
+.program-card img {
+  height: auto;
+  width: 100%;
+}
+
+.program-description {
+  padding: 1rem 1rem 1.5rem;
+  line-height: 1.5;
+}
+
+.program-description h5, p {
+  margin: .5rem 0 0 0;
+}
+
+.program-description h4 {
+  margin: 0;
+}
+
+/* Mobile display */
+@media only screen and (max-width: 480px) {
+  .program-card img, h5, .courses {
+    display: none;
+  }
+  .programs {
+    background-color: white;
+  }
+
+  .programs h2 {
+    margin: 0 auto 1rem;
+  }
+
+  .program-card {
+    background-color: rgba(225, 219, 216, 0.8);
+    margin: 0 1rem .5rem;
+    vertical-align: middle;
+  }
+  .grid-container {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  .program-description {
+    padding: 0;
+  }
+  .program-description h4 {
+    padding: 1rem;
   }
 }
