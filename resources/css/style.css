@@ -416,3 +416,56 @@ button {
     padding: 1rem;
   }
 }
+
+/* Thesis section */
+.thesis {
+  padding-left: 1.5rem;
+}
+
+.thesis h2 {
+  margin: 2rem auto 0;
+  text-align: center;
+}
+
+.featured video {
+  width: 100%;
+}
+
+.more {
+  padding-top: 1rem;
+  width: 40%;
+}
+
+.cards {
+  display: inline-flex;
+  flex: 1;
+  height: 30%;
+  width: 100%;
+}
+
+.cards img {
+  height: auto;
+  width: 35%;
+  padding: 1rem;
+}
+
+#first {
+  background-color: rgba(225, 219, 216, .8);
+}
+
+h4.video {
+  margin: 1.5rem 0 .5rem;
+}
+
+/*Mobile display */
+@media only screen and (max-width: 480px) {
+  .video, .video-description, .more {
+    display: none;
+  }
+  .thesis {
+    padding: 0;
+  }
+  .news-content {
+    padding: 2rem 0 1.5rem;
+  }
+}
