@@ -1,0 +1,328 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+  }
+  
+  main {
+    position: relative;
+    top: 64px;
+  }
+  
+  h1 {
+    font-family: 'Gayathri', sans-serif;
+    font-size: 2.5rem;
+    color: rgba(10, 10, 10, 0.8);
+    font-weight: bolder;
+    max-width: 310px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: rgba(10, 10, 10, 0.75);
+    font-weight: bold;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+    color: rgba(10, 10, 10, 0.75);
+    line-height: 1.5;
+  }
+  
+  h4 {
+    font-size: 1.125rem;
+    color: rgba(10, 10, 10, 0.75);
+    line-height: 1.5;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: rgba(10, 10, 10, 0.95);
+    font-weight: 400;
+  }
+  
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  a {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+    font-size: 1rem;
+  }
+  
+  .site-wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background-color: #ffffff;
+  }
+  
+  header .site-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    position: relative;
+  }
+  
+  header .desktop-logo {
+    flex: 1;
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    float: left;
+    padding-bottom: 1rem;
+    margin: 0;
+    height: 2rem;
+    font-weight: lighter;
+    font-size: 1.5rem;
+  
+  }
+  
+  .desktop-logo img {
+    position: relative;
+    top: .4rem;
+    width: 27px;
+    height: 100%;
+    padding-right: 3px;
+  }
+  
+  .desktop-logo span {
+    font-family: 'Gayathri';
+    font-weight: bold;
+    padding-right: 1px;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav li:nth-of-type(1n + 2) {
+    display: flex;
+    padding-left: 1rem;
+  }
+  
+  nav a {
+    vertical-align: bottom;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: #000;
+    text-decoration: none;
+    outline: none;
+  }
+  
+  .mobile-nav {
+    display: none;
+  }
+  
+  /* Banner section */
+  .banner {
+    display: flex;
+    background-color: rgba(225, 219, 216, 0.8);
+    padding: 2rem 1.5rem;
+  }
+  
+  .banner-content {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .banner-content img {
+    width: 60%;
+  }
+  
+  .cta {
+    padding-left: 1.5rem;
+    margin: auto 1rem;
+    text-align: left;
+    width: 40%;
+    max-width: 310px;
+  }
+  
+  button {
+    border-radius: 6px;
+    background-color: rgba(74, 74, 74, 1);
+    color: white;
+    width: 310px;
+    padding: .5rem 1rem;
+    font-size: .875rem;
+  }
+  
+  button:hover {
+    background-color: rgba(74, 74, 74, 0.75);
+    font-weight: bold;
+  }
+  
+  /* News section */
+  .news {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 1.5rem;
+  }
+  
+  .news-content {
+    display: inline-flex;
+    flex: 1;
+  }
+  
+  .featured {
+    width: 60%;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+  }
+  
+  .featured p {
+    width: 95%;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .featured h2 {
+    margin: 2rem 0 1.5rem;
+  }
+  
+  .featured img {
+    width: 100%;
+  }
+  
+  .read-more {
+    padding-top: 1rem;
+    width: 40%;
+    border-left: 2px solid rgba(225, 219, 216, 0.8);
+  }
+  
+  .card {
+    display: inline-flex;
+    flex: 1;
+    height: 30%;
+    width: 100%;
+    border-bottom: 2px solid rgba(225, 219, 216, 0.8);
+  }
+  
+  .card img {
+    height: auto;
+    width: 35%;
+    padding: 1rem;
+  }
+  
+  .card-text {
+    padding: 1rem;
+    margin: auto;
+    width: 50%;
+  }
+  
+  .card-text h4, p {
+    margin-top: .5rem;
+    margin-bottom: 0;
+  }
+  
+  .card-text a {
+    text-decoration: none;
+    color: rgba(50, 50, 255, .8);
+  }
+  
+  #guest {
+    background-color: rgba(225, 219, 216, 0.8);
+  }
+  
+  .mobile-img {
+    display: none;
+  }
+  
+  /*Learning section */
+  .programs {
+    background-color: rgba(225, 219, 216, 0.4);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .programs h2 {
+    margin: 0 auto 2rem;
+    text-align: center;
+  }
+  
+  .grid-container {
+    display: inline-grid;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    grid-gap: 2rem;
+  }
+  
+  .program-card {
+    background-color: white;
+  }
+  
+  .program-card img {
+    height: auto;
+    width: 100%;
+  }
+  
+  .program-description {
+    padding: 1rem 1rem 1.5rem;
+    line-height: 1.5;
+  }
+  
+  .program-description h5, p {
+    margin: .5rem 0 0 0;
+  }
+  
+  .program-description h4 {
+    margin: 0;
+  }
+  
+  /* Thesis section */
+  .thesis {
+    padding-left: 1.5rem;
+  }
+  
+  .thesis h2 {
+    margin: 2rem auto 0;
+    text-align: center;
+  }
+  
+  .featured video {
+    width: 100%;
+  }
+  
+  .more {
+    padding-top: 2rem;
+    width: 40%;
+  }
+  
+  .cards {
+    display: inline-flex;
+    flex: 1;
+    height: 30%;
+    width: 100%;
+  }
+  
+  .cards img {
+    height: auto;
+    width: 35%;
+    padding:1rem;
+  }
+  
+  #first {
+    background-color: rgba(225, 219, 216, .8);
+  }
+  
+  h4.video {
+    margin: 1.5rem 0 .5rem;
+  }
+  
