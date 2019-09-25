@@ -1,231 +1,192 @@
+/* Universal */
 html {
-  font-size: 16px;
+  font-size: 1rem;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
 }
 
 body {
-  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
 }
 
 main {
   position: relative;
-  height: 1400px;
-  top: 64px;
+  top: 4rem;
+  bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 h1 {
-  font-family: 'Gayathri', sans-serif;
-  font-size: 2.5rem;
-  color: rgba(10, 10, 10, 0.8);
-  font-weight: bolder;
-  max-width: 310px;
-}
+    font-family: 'Gayathri', sans-serif;
+    font-size: 2.5rem;
+    color: rgba(10, 10, 10, 0.8);
+    font-weight: bolder;
+    max-width: 310px;
+  }
 
-h2 {
-  font-size: 2rem;
-  color: rgba(10, 10, 10, 0.75);
-  font-weight: bold;
-}
+  h2 {
+    font-size: 2rem;
+    color: rgba(10, 10, 10, 0.75);
+    font-weight: bold;
+  }
 
-h3 {
-  font-size: 1.25rem;
-  color: rgba(10, 10, 10, 0.75);
-  line-height: 1.5;
-}
+  h3 {
+    font-size: 1.25rem;
+    color: rgba(10, 10, 10, 0.75);
+    line-height: 1.5;
+  }
 
-h4 {
-  font-size: 1.125rem;
-  color: rgba(10, 10, 10, 0.75);
-  line-height: 1.5;
-}
+  h4 {
+    font-size: 1.125rem;
+    color: rgba(10, 10, 10, 0.75);
+    line-height: 1.5;
+  }
 
-h5 {
-  font-size: 1rem;
-  font-weight: 400;
-  color: rgba(10, 10, 10, 0.75);
-}
+  p {
+    font-size: 1rem;
+    color: rgba(10, 10, 10, 0.95);
+    font-weight: 400;
+  }
 
-p {
-  font-size: 1rem;
-  color: rgba(10, 10, 10, 0.95);
-}
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
 
-/* Header */
-header {
-  right: 0;
-  left: 0;
-  top: 4rem;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  z-index: 3;
-  background-color: #ffffff;
-}
+  a {
+    text-decoration: none;
+    outline: none;
+    color: rgba(10, 10, 10, 0.95);
+    font-size: 1rem;
+  }
 
-header .content {
-  display: flex;
-  align-items: center;
-  padding: 0 1.5rem;
-  position: relative;
-}
+  .site-wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 
-header .desktop-logo {
-  flex: 1;
-  text-decoration: none;
-  outline: none;
-  color: #000;
-  float: left;
-  padding-bottom: 1rem;
-  margin: 0;
-  height: 2rem;
-  font-weight: lighter;
-  font-size: 1.5rem;
-
-}
-
-.desktop-logo img {
-  position: relative;
-  top: .4rem;
-  width: 27px;
-  height: 100%;
-  padding-right: 3px;
-}
-
-.desktop-logo span {
-  font-weight: bold;
-  padding-right: 1px;
-}
-
-header nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav li {
-  padding-left: 1rem;
-}
-
-nav a {
-  vertical-align: bottom;
-  line-height: 2rem;
-  font-size: 1.2rem;
-  color: #000;
-  text-decoration: none;
-  outline: none;
-}
-
-header .mobile {
-  display: none;
-}
-
-/* Mobile display */
-@media only screen and (max-width: 732px) {
-  header .desktop-logo, .desktop {
+  /* Header */
+  .mobile-nav {
     display: none;
   }
 
-  header .mobile {
+  header {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background-color: #fff;
+    height: 4rem;
+  }
+
+  header .site-wrapper {
+    height: 100%;
+    padding: 0 1.5rem;
+  }
+
+  .logo {
+    float: left;
     display: block;
-    width: 100%;
-    top: 4rem;
-  }
-  header .mobile-nav {
-    padding: 0;
+    margin: 0;
+    height: 2rem;
+    font-weight: lighter;
+    padding: .5rem 0;
+    align-items: flex-start;
   }
 
-  header .mobile ul {
+  .logo-text {
+    font-size: 1.5rem;
+    font-family: 'Gayathri', sans-serif;
+    margin: 1rem 0;
+    height: 2rem;
+    float: left;
+    font-weight: lighter;
+  }
+
+  .logo-text span {
+    font-weight: 900;
+    padding-right: .25rem;
+  }
+
+  .logo img {
+    position: relative;
+    width: 2rem;
+    padding-right: .25rem;
+    height: auto;
+  }
+  
+  nav {
+    float: right;
+    width: 60%;
+  }
+
+  ul {
+    list-style-type: none;
+    text-align: right;
+    float: right;
+  }
+
+  nav ul li {
+    display: inline-block;
+    padding-left: 1rem;
+  }
+
+  .desktop-menu a {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  /* Banner section */
+  .banner {
     display: flex;
-    justify-content: space-around;
+    background-color: rgba(225, 219, 216, 0.8);
+  }
+
+  .banner-container.site-wrapper {
+    display: inline-flex;
     align-items: center;
-    width: 100%;
+    padding: 2rem 1.5rem;
+  }
+  
+  .banner-img {
+    width: 60%;
   }
 
-  header .mobile li {
-    padding: 0;
+  .cta {
+    padding-left: 1.5rem;
+    margin: auto 0;
+    text-align: left;
+    width: 40%;
+    max-width: 310px;
   }
-}
 
-/* Banner section */
-.banner {
-  display: flex;
-  background-color: rgba(225, 219, 216, 0.8);
-  padding: 2rem 1.5rem;
-}
+  .cta h1, .cta h3 {
+    margin: 0 auto 1.5rem;
+  }
 
-.banner-content {
-  display: inline-flex;
-  align-items: center;
-}
-
-.banner-content img {
-  width: 60%;
-}
-
-.cta {
-  padding-left: 1.5rem;
-  margin: auto 1rem;
-  text-align: left;
-  width: 40%;
-  max-width: 310px;
-}
-
-button {
-  border-radius: 6px;
-  background-color: rgba(74, 74, 74, 1);
-  color: white;
-  width: 310px;
-  padding: .5rem 1rem;
-  font-size: .875rem;
-}
-
-button:hover {
-  background-color: rgba(74, 74, 74, 0.75);
-  font-weight: bold;
-}
-
-/* Mobile display */
-@media only screen and (max-width: 480px) {
-.banner {
-  padding: 0;
-}
-
-.banner-content {
-  display: flex;
-  flex-flow: column wrap;
-}
-
-.banner-content img {
-  width: 100%;
-  padding: 0;
-}
-
-h1 {
-  margin: 0;
-}
-.cta {
-  margin: 32px 16px;
-  max-width: 405px;
-  padding: 0;
-  width: 100%;
-}
-
-h3 {
-  margin-top: 32px;
-  margin-bottom: 24px;
-}
-
-button {
-  margin: auto;
-  width: 100%;
-}
-}
+  button {
+    border-radius: 6px;
+    background-color: rgba(74, 74, 74, 1);
+    color: white;
+    width: 310px;
+    padding: .5rem 1rem;
+    font-size: .875rem;
+  }
+  
+  button:hover {
+    background-color: rgba(74, 74, 74, 0.75);
+    font-weight: bold;
+  }
 
 /* News section */
+.mobile {
+  display: none;
+}
+
 .news {
   display: flex;
   align-items: flex-start;
-  padding-left: 1.5rem;
 }
 
 .news-content {
@@ -233,33 +194,33 @@ button {
   flex: 1;
 }
 
-.featured {
+.section-poster {
   width: 60%;
   padding-right: 1.5rem;
   padding-top: 2rem;
 }
 
-.featured p {
+.section-poster p {
   width: 95%;
   margin-top: 0;
   margin-bottom: 2rem;
 }
 
-.featured h2 {
+.section-poster h2 {
   margin: 2rem 0 1.5rem;
 }
 
-.featured img {
+.section-poster img {
   width: 100%;
 }
 
-.read-more {
+.section-info__wrapper {
   padding-top: 1rem;
   width: 40%;
   border-left: 2px solid rgba(225, 219, 216, 0.8);
 }
 
-.card {
+.section-info__card {
   display: inline-flex;
   flex: 1;
   height: 30%;
@@ -267,24 +228,24 @@ button {
   border-bottom: 2px solid rgba(225, 219, 216, 0.8);
 }
 
-.card img {
+.section-info__img {
   height: auto;
   width: 35%;
   padding: 1rem;
 }
 
-.card-text {
+.section-info__text {
   padding: 1rem;
   margin: auto;
   width: 50%;
 }
 
-.card-text h4, p {
+.section-info__text h4, p {
   margin-top: .5rem;
   margin-bottom: 0;
 }
 
-.card-text a {
+.section-info__text a {
   text-decoration: none;
   color: rgba(50, 50, 255, .8);
 }
@@ -293,58 +254,8 @@ button {
   background-color: rgba(225, 219, 216, 0.8);
 }
 
-.mobile-img {
-  display: none;
-}
-
-/* Mobile display */
-@media only screen and (max-width: 480px) {
-  .featured, .desktop-img {
-    display: none;
-  }
-
-  .news {
-    padding: 0;
-  }
-
-  #guest {
-    background-color: white;
-  }
-
-  .read-more {
-    display: flex;
-    flex-flow: column wrap;
-    width: 100%;
-    border-left: none;
-    padding-top: 0;
-  }
-
-  .card {
-    display: block;
-  }
-
-  .card img {
-    width: 100%;
-    height: 40%;
-  }
-
-  .card-text {
-    margin-left: 1rem;
-    padding-left: 1rem;
-    padding-bottom: 2rem;
-  }
-
-  .mobile-img {
-    display: flex;
-    width: auto;
-    height: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
-/*Learning section */
-.programs {
+ /*Learning section */
+ .programs {
   background-color: rgba(225, 219, 216, 0.4);
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -367,111 +278,82 @@ button {
   background-color: white;
 }
 
-.program-card img {
+.program-card__img {
   height: auto;
   width: 100%;
 }
 
-.program-description {
+.program-card__text {
   padding: 1rem 1rem 1.5rem;
   line-height: 1.5;
 }
 
-.program-description h5, p {
+.program-card__text h5, p {
   margin: .5rem 0 0 0;
 }
 
-.program-description h4 {
+.program-card__text h4 {
   margin: 0;
 }
 
-/* Mobile display */
-@media only screen and (max-width: 480px) {
-  .program-card img, h5, .courses {
-    display: none;
-  }
-  .programs {
-    background-color: white;
-  }
-
-  .programs h2 {
-    margin: 0 auto 1rem;
-  }
-
-  .program-card {
-    background-color: rgba(225, 219, 216, 0.8);
-    margin: 0 1rem .5rem;
-    vertical-align: middle;
-  }
-  .grid-container {
-    display: block;
-    width: 100%;
-    padding: 0;
-  }
-
-  .program-description {
-    padding: 0;
-  }
-  .program-description h4 {
-    padding: 1rem;
-  }
+ /* Thesis section */
+ .thesis {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 2rem;
 }
 
-/* Thesis section */
-.thesis {
-  padding-left: 1.5rem;
-}
-
-.thesis h2 {
+.thesis-title {
   margin: 2rem auto 0;
   text-align: center;
 }
 
-.featured video {
-  width: 100%;
+#thesis {
+  margin-top: 2rem;
+  padding-top: 0;
+  border: none;
 }
 
-.more {
-  padding-top: 2rem;
-  width: 40%;
+#thesis .section-info__card {
+  border: none;
 }
-
-.cards {
-  display: inline-flex;
-  flex: 1;
-  height: 30%;
-  width: 100%;
-}
-
-.cards img {
-  height: auto;
-  width: 35%;
-  padding:1rem;
-}
-
 #first {
   background-color: rgba(225, 219, 216, .8);
 }
 
 h4.video {
-  margin: 1.5rem 0 .5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-/*Mobile display */
-@media only screen and (max-width: 480px),
-only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
-only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
-only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
-only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),
-only screen and (                min-resolution: 192dpi) and (min-width: 320px),
-only screen and (                min-resolution: 2dppx)  and (min-width: 320px){
-  .video, .video-description, .more {
-    display: none;
-  }
-  .thesis {
-    padding: 0;
-  }
-  .news-content {
-    padding: 2rem 0 1.5rem;
-  }
+/* footer */
+
+footer {
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  height: 4rem;
+  display: flex;
+  padding-top: .5rem;
+  border-top: 2px solid rgba(225, 219, 216, 0.8);
+}
+
+#footer {
+  width: 50%;
+  margin: .5rem 0;
+  font-size: .75rem;
+}
+
+.terms {
+  margin-top: .5rem;
+  float: right;
+  width: 50%;
+}
+
+.terms a {
+  float: right;
+  text-align: right;
+  padding-left: 1rem;
+  font-size: .75rem;
 }
