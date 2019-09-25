@@ -65,7 +65,9 @@ h1 {
     margin: 0 auto;
   }
 
-  /* Header */
+  /*=========================
+          HEADER
+  =========================== */
   .mobile-nav {
     display: none;
   }
@@ -137,7 +139,46 @@ h1 {
     font-weight: 400;
   }
 
-  /* Banner section */
+  /* Mobile & tablet display */
+  @media 
+  only screen and (max-width: 860px),
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+  only screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min-resolution: 192dpi) and (min-width: 320px),
+  only screen and (min-resolution: 2dppx) and (min-width: 320px) {
+
+    header .site-wrapper {
+      padding: 0;
+    }
+
+    .logo, .logo-text, .desktop-nav {
+      display: none;
+    }
+    
+    .cellphone {
+      width: 100%;
+      display: block;
+    }
+
+    .mobile-nav {
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      top: 4rem;
+    }
+
+    nav ul li {
+      padding: 0;
+    }
+  }
+
+  /* ================
+     BANNER SECTION 
+  ===================*/
   .banner {
     display: flex;
     background-color: rgba(225, 219, 216, 0.8);
@@ -179,7 +220,54 @@ h1 {
     font-weight: bold;
   }
 
-/* News section */
+  /* Mobile display */
+  @media 
+  only screen and (max-width: 860px),
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+  only screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min-resolution: 192dpi) and (min-width: 320px),
+  only screen and (min-resolution: 2dppx) and (min-width: 320px) {
+    .banner {
+      padding: 0;
+    }
+
+    .banner-container.site-wrapper {
+      display: flex;
+      flex-flow: column wrap;
+      padding: 0;
+    }
+
+    .banner-img {
+      width: 100%;
+      padding: 0;
+    }
+
+    .cta {
+      
+      max-width: 405px;
+      padding: 0 0 2rem;
+      width: 100%;
+    }
+
+    .cta h1 {
+      margin: 2rem 1rem;
+    }
+
+    .cta h3 {
+      margin-left: 1rem;
+    }
+
+    button {
+      margin: auto;
+      width: 100%;
+    }
+  }
+
+/* ================
+    NEWS SECTION 
+  =================*/
 .mobile {
   display: none;
 }
@@ -254,7 +342,64 @@ h1 {
   background-color: rgba(225, 219, 216, 0.8);
 }
 
- /*Learning section */
+/* Cellphone display */
+@media 
+  only screen and (max-width: 480px),
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+  only screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min-resolution: 192dpi) and (min-width: 320px),
+  only screen and (min-resolution: 2dppx) and (min-width: 320px) {
+    .section-poster, .desktop {
+      display: none;
+    }
+
+    .section-info__wrapper {
+      display: flex;
+      flex-flow: column wrap;
+      width: 100%;
+      border-left: none;
+      padding-top: 0;
+    }
+
+    .section-info__card {
+      display: block;      
+    }
+
+    .section-info__img {
+      display: flex;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .section-info__img {
+      display: flex;
+      width: 100%;
+      height: auto;
+    }
+
+    .mobile {
+      display: flex;
+      max-width: 100%;
+      padding: 1rem;
+    }
+
+    .section-info__text {
+      margin-left: 1rem;
+      padding-left: 1rem;
+      padding-bottom: 2rem;
+    }
+
+    #guest {
+      background-color: white;
+    }
+  }
+
+ /* =====================
+    LEARNING SECTION
+    ===================== */
  .programs {
   background-color: rgba(225, 219, 216, 0.4);
   padding-top: 2rem;
@@ -296,7 +441,50 @@ h1 {
   margin: 0;
 }
 
- /* Thesis section */
+/* Mobile display */
+@media 
+  only screen and (max-width: 480px),
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+  only screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min-resolution: 192dpi) and (min-width: 320px),
+  only screen and (min-resolution: 2dppx) and (min-width: 320px) {
+    .program-card__img, .program-card p {
+      display: none;
+    }
+
+    .programs {
+      background-color: white;
+    }
+  
+    .programs h2 {
+      margin: 0 auto 1rem;
+    }
+
+    .program-card {
+      background-color: rgba(225, 219, 216, 0.8);
+      margin: 0 1rem .5rem;
+      vertical-align: middle;
+    }
+    
+    .grid-container {
+      display: block;
+      width: 100%;
+      padding: 0;
+    }
+
+    .program-card__text {
+      padding: 0;
+    }
+    .program-card__text h4 {
+      padding: 1rem;
+    }
+  }
+
+ /* ===================
+     THESIS SECTION
+    =================== */
  .thesis {
   display: flex;
   align-items: flex-start;
@@ -326,7 +514,39 @@ h4.video {
   margin-bottom: 1.5rem;
 }
 
-/* footer */
+/* Mobile display */
+@media 
+  only screen and (max-width: 480px),
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+  only screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min-resolution: 192dpi) and (min-width: 320px),
+  only screen and (min-resolution: 2dppx) and (min-width: 320px) {
+    .video, .video-description, #thesis {
+      display: none;
+    }
+
+    .section-poster {
+      display: flex;
+      width: 100%;
+      padding: 0;
+    }
+
+    .thesis {
+      padding: 0;
+      bottom: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .thesis-title {
+      margin-bottom: 1rem;
+    }
+  }
+
+/* ===========
+    FOOTER
+   =========== */
 
 footer {
   position: relative;
@@ -357,3 +577,22 @@ footer {
   padding-left: 1rem;
   font-size: .75rem;
 }
+
+/* Mobile display */
+@media 
+  only screen and (max-width: 480px),
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+  only screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min-resolution: 192dpi) and (min-width: 320px),
+  only screen and (min-resolution: 2dppx) and (min-width: 320px) {
+    .terms {
+      display: none;
+    }
+
+    #footer {
+      width: 100%;
+      margin: 1rem;
+    }
+  }
