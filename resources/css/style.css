@@ -13,7 +13,7 @@ main {
   position: relative;
   top: 4rem;
   bottom: 4rem;
-  padding-bottom: 2rem;
+  min-height: 100vh;
 }
 
 h1 {
@@ -351,7 +351,11 @@ h1 {
   only screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
   only screen and (min-resolution: 192dpi) and (min-width: 320px),
   only screen and (min-resolution: 2dppx) and (min-width: 320px) {
-    .section-poster, .desktop {
+    #news-section {
+      display: none;
+    }
+
+    .desktop {
       display: none;
     }
 
@@ -370,20 +374,17 @@ h1 {
     .section-info__img {
       display: flex;
       width: 100%;
+      height: auto;
       padding: 0;
       margin: 0;
-    }
-
-    .section-info__img {
-      display: flex;
-      width: 100%;
-      height: auto;
     }
 
     .mobile {
       display: flex;
       max-width: 100%;
       padding: 1rem;
+      object-fit: cover;
+      overflow: hidden;
     }
 
     .section-info__text {
@@ -505,6 +506,11 @@ h1 {
 #thesis .section-info__card {
   border: none;
 }
+
+p.video-description {
+  margin-bottom: 0;
+}
+
 #first {
   background-color: rgba(225, 219, 216, .8);
 }
