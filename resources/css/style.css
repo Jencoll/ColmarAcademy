@@ -245,23 +245,30 @@ h1 {
     }
 
     .cta {
-      
-      max-width: 405px;
-      padding: 0 0 2rem;
+      max-width: 860px;
+      padding: 2rem 0 2rem;
       width: 100%;
     }
 
     .cta h1 {
-      margin: 2rem 1rem;
+      margin: 0;
+      font-size: 3.5rem;
+      width: 100%;
+      max-width: 480px;
+      margin-left: 1rem;
+      padding-bottom: 2rem;
     }
 
     .cta h3 {
       margin-left: 1rem;
+      font-size: 2.4rem;
+      max-width: 480px;
     }
 
     button {
       margin: auto;
       width: 100%;
+      font-size: 2rem;
     }
   }
 
@@ -402,10 +409,20 @@ h1 {
       padding-bottom: 2rem;
     }
 
+    .section-info__text h4 {
+      font-size: 2.5rem;
+    }
+
+    .section-info__text p, a {
+      font-size: 1.75rem;
+    }
+
     #guest {
       background-color: white;
     }
   }
+
+  /* Tablet display */
 
  /* =====================
     LEARNING SECTION
@@ -470,6 +487,7 @@ h1 {
   
     .programs h2 {
       margin: 0 auto 1rem;
+      font-size: 2.75rem;
     }
 
     .program-card {
@@ -489,6 +507,7 @@ h1 {
     }
     .program-card__text h4 {
       padding: 1rem;
+      font-size: 2.25rem;
     }
   }
 
@@ -556,6 +575,7 @@ h4.video {
 
     .thesis-title {
       margin-bottom: 1rem;
+      font-size: 2.75rem;
     }
   }
 
@@ -609,5 +629,6 @@ footer {
     #footer {
       width: 100%;
       margin: 1rem;
+      font-size: 1.5rem;
     }
   }
