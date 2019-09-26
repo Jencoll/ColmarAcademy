@@ -379,9 +379,18 @@ h1 {
       margin: 0;
     }
 
+    .site-wrapper {
+      margin: 0;
+      width: 100%;
+    }
+
+    .news-content {
+      width: 100%;
+    }
+
     .mobile {
       display: flex;
-      max-width: 100%;
+      width: 100%;
       padding: 1rem;
       object-fit: cover;
       overflow: hidden;
